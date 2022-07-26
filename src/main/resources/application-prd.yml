@@ -1,0 +1,11 @@
+server:
+  servlet:
+    context-path: /recipes-api
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_SERVER}:${MYSQL_PORT}/${MYSQL_DATABASE}
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+  flyway:
+    enabled: true

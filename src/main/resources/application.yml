@@ -1,0 +1,21 @@
+logging:
+  level:
+    ch.qos.logback.core.db.DataSourceConnectionSource: TRACE
+    org.flywaydb: TRACE
+    org.flywaydb.core.internal.dbsupport.SqlScript: TRACE
+server:
+  servlet:
+    context-path: /recipes-api
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/recipes
+    username: root
+    password: qwe123
+  flyway:
+    enabled: true
+  jpa:
+    show-sql: true
+springdoc:
+  swagger-ui:
+    tags-sorter: alpha
