@@ -18,3 +18,5 @@ docker-compose up
 ```
 http://localhost:8080/recipes-api/swagger-ui/index.html
 ```
+
+teste
